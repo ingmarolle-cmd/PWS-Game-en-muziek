@@ -75,14 +75,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    // restarting game just resets the gamescene
-    public void RestartGame()
+    public void CloseControls()
     {
-        Time.timeScale = 1f;
-
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
+        gameControlsPanel.SetActive(false);
+        startMenuPanel.SetActive(true);
     }
 
     public void ShowControls()
@@ -91,5 +87,15 @@ public class GameManager : MonoBehaviour
 
         startMenuPanel.SetActive(false);
         gameControlsPanel.SetActive(true);
+    }
+
+    // restarting game just resets the gamescene
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
     }
 }
