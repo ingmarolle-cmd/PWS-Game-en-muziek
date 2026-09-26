@@ -22,10 +22,10 @@ Doel: simpele game opstellen met genoeg functionaliteit om onderzoek te doen naa
 
 - Add game difficulty scaler
 
-- Allow own music to be used
+- Muziek handler voor eigen tracks
 
 - ~~Player dodge functie implementeren~~
 
 - Score tracker implementeren
 
-- Python script schrijven dat gelogde stats visualiseert
+- (mogelijk? -- Python script schrijven dat gelogde stats visualiseert)
