@@ -67,8 +67,8 @@ public class GameManager : MonoBehaviour
         gameRunning = false;
 
         Debug.Log("GAME OVER");
-        Debug.Log("Score: " + (Mathf.FloorToInt(score) -10)); // -10 because game doesnt actually start until after 10sec
-        Debug.Log("Survival time: " + (survivalTime - 10));
+        Debug.Log("Score: " + Mathf.FloorToInt(score)); // -10 because game doesnt actually start until after 10sec
+        Debug.Log("Survival time: " + survivalTime);
 
         gameOverPanel.SetActive(true);
 
